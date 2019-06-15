@@ -27,17 +27,18 @@ class Punto:
             (self.x - otro_punto.x)**2 +
             (self.y - otro_punto.y)**2)
 
+def main():
+    punto1 = Punto()
+    punto2 = Punto()
+    punto2.mover(5,0)
 
-punto1 = Punto()
-punto2 = Punto()
+    print(punto1.x, punto1.y)
+    print(punto2.x, punto2.y)
+    print(punto1.calcular_distancia(punto2))
 
-punto2.mover(5,0)
+    punto3 = Punto(3)
+    print(punto3.x)
 
 
-print(punto1.x, punto1.y)
-print(punto2.x, punto2.y)
-
-print(punto1.calcular_distancia(punto2))
-
-punto3 = Punto(3)
-print(punto3.x)
+if __name__ == '__main__':
+    main()
